@@ -203,7 +203,7 @@ export default function Home() {
                 
                 <button
                   onClick={goToIntro}
-                  className="text-sm text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+                  className="text-sm text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors cursor-pointer"
                 >
                   Back to Start
                 </button>
@@ -250,7 +250,7 @@ export default function Home() {
 
           {/* Volume meter */}
           {audioState.isListening && (
-            <VolumeMeter volume={audioState.volume} isActive={audioState.isListening} />
+            <VolumeMeter volume={audioState.volume} isActive={true} />
           )}
 
           {/* Progress indicator */}

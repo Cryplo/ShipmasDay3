@@ -37,7 +37,7 @@ export function useAudioInput(): [AudioInputState, AudioInputControls] {
 
     // Normalize to 0-1 range (byte values are 0-255)
     // Multiply by 10 to increase sensitivity (current 10% becomes 100%)
-    const normalizedVolume = Math.min((average / 128) * 2, 1);
+    const normalizedVolume = Math.min((average / 128) * 3, 1);
 
     setVolume(normalizedVolume);
 
