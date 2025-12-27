@@ -1,4 +1,4 @@
-# Sonic Lights
+# Light Symphony
 
 An interactive Christmas visualization where you paint festive lights with sound. Make noise to light up a snowy house - quiet sounds create green lights, loud sounds create red lights, and everything in between produces warm yellows and oranges.
 

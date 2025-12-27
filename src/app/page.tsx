@@ -229,7 +229,7 @@ export default function Home() {
         {/* Title */}
         <header className="text-center mb-4">
           <h1 className="text-xl md:text-2xl font-semibold tracking-tight font-christmas">
-            Sonic Lights
+            Light Symphony
           </h1>
         </header>
 
