@@ -1,0 +1,35 @@
+You are a senior full-stack engineer and front-end developer. Your task is to design and implement a **Next.js + TypeScript** project called `sonic_lights` that runs in a browser and reacts to real-world sound input.
+
+High-Level Goal:
+Build a festive, interactive Christmas visualization with the following specifications:
+
+1. The scene is **light-themed and snowy**, with subtle falling snow animation in the background.
+2. There is a **house silhouette** centered in the scene.
+3. **40 lights** wrap around the house (roofline and edges), each represented as a circular or small bulb element.
+4. The lights start **off (unlit)**.
+5. The **user’s microphone input** is used to control the lights:
+   - Lights turn on **one at a time** in sequence.
+   - The **color of each light** is determined by sound amplitude:
+       - Louder sounds → **redder** hue
+       - Quieter sounds → **greener** hue
+       - Intermediate volume → gradient (yellow/orange)
+6. **Timing**:
+   - **4 lights per second**, so the full sequence (40 lights) takes **10 seconds**.
+   - Each light’s color is determined based on the instantaneous volume when it is triggered.
+7. **Interactivity & feedback**:
+   - Snow continues falling throughout.
+   - Lights fade in smoothly when activated.
+   - When all lights are lit, a subtle sparkle or glow effect triggers to celebrate completion.
+8. **Implementation constraints**:
+   - Do **not use vibe-coded styling**.
+   - Use **TypeScript** and **React/Next.js** best practices.
+   - Keep the code modular, clear, and maintainable.
+   - Use standard, lightweight libraries only (e.g., `tone.js` for microphone input is fine, or standard Web Audio API).
+   - Include all CSS/animation directly (no external frameworks for the visual effects).
+9. **Output requirements**:
+   - All code should be self-contained in a Next.js app.
+   - Include a README explaining how to run the project locally (`npm install && npm run dev`).
+   - Ensure microphone permissions are requested gracefully and fallback gracefully if denied.
+
+Deliverable:
+Return the complete **Next.js TypeScript project code**, including all necessary files (`pages/index.tsx`, components, styles) in a single Markdown code block. Ensure the implementation matches all the requirements above, is polished, and ready to run.
